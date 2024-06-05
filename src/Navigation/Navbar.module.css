@@ -18,9 +18,10 @@
   /* navbar */
   .navbar {
     position: fixed;
+    z-index: 100;
     left: 0%;
     top: 0%;
-    background-color: rgb(188, 21, 160);
+    background-color: var(--highlight);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -85,12 +86,12 @@
       position: fixed;
       flex-direction: column;
       gap: 0;
-      top: 70px;
+      top: 8.5%;
       left: -100%;
       text-align: start;
       width: 100%;
       transition: 0.7s ease-in-out;
-      background-color: aliceblue;
+      background-color: var(--shadow);
       padding: 10px;
     }
   

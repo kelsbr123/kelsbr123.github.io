@@ -16,7 +16,7 @@ function Navbar() {
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
           {/* logo */}
-          <a className={`${styles.logo}`} onClick={toggleActiveClass}> Kels </a>
+          <a className={`${styles.logo}`} onClick={toggleActiveClass}> kels.dev </a>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li onClick={removeActive}>
               <a href='/' className={`${styles.navLink}`}>Home</a>
