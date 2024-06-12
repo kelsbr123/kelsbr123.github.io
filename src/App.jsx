@@ -9,9 +9,6 @@ import {Routes, Route} from 'react-router-dom'
 function App() {
   return(
     <>
-      <header className="navbar">
-        <Navbar/>
-      </header>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>

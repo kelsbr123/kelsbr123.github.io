@@ -2,12 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import Navbar from './Navigation/Navbar.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <header className="navbar">
+          <Navbar/>
+      </header>
+      <App/>
     </BrowserRouter>
   </React.StrictMode>,
 )
