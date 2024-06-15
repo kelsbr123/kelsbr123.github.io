@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import  styles from './Navbar.module.css';
+import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
-import About from '../About';
+
 function Navbar() {
   // adding the states 
   const [isActive, setIsActive] = useState(false);
@@ -18,7 +18,9 @@ function Navbar() {
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
           {/* logo */}
-          <a className={`${styles.logo}`} onClick={toggleActiveClass}> kels.dev </a>
+          <a onClick={toggleActiveClass}>
+            <img className='logo' src="./icon_transparent.png" alt="" />
+          </a>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li onClick={removeActive}>
               <a href='/' className={`${styles.navLink}`}>Home</a>
@@ -29,13 +31,17 @@ function Navbar() {
               </Link>
             </li>
             <li onClick={removeActive}>
-              <a href='/projects' className={`${styles.navLink}`}>Projects</a>
+              <Link to="/projects">
+                <a className={`${styles.navLink}`}>Projects</a>
+              </Link>
             </li>
             <li onClick={removeActive}>
-              <a href='#home' className={`${styles.navLink}`}>Contact</a>
+              <Link to='/contact'>
+                <a className={`${styles.navLink}`}>Contact</a>
+              </Link>
             </li>
           </ul>
-          <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
+          <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`} onClick={toggleActiveClass}>
             <span className={`${styles.bar}`}></span>
             <span className={`${styles.bar}`}></span>
             <span className={`${styles.bar}`}></span>
