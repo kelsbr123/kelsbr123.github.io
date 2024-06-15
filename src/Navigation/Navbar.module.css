@@ -3,69 +3,88 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    left: 20px;
   }
   
   ul {
     list-style: none;
+    padding: 150px 100px;
+    vertical-align: middle;
+    font-size: 30px;
   }
   
   a {
     text-decoration: inherit;
-    font-size: 18px;
   }
   
   /* navbar */
   .navbar {
     position: fixed;
     z-index: 100;
-    left: 0%;
-    top: 0%;
-    display: flex;
-    justify-content: space-around;
+    top: 30px;
+    display: inline-flex;
     align-items: center;
     min-height: 10px;
     width: 100%;
-    gap: 20px;
   }
   
   
   /* logo  */
   .logo {
-    display: inline-flex;
-    max-width: 20px;
-    max-height: 20px;
-    font-size: 30px;
+    display: block;
+    max-height: 2rem;
+    scale: 200%;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cff);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafb);
   }
   
   
   /* ul  */
-  .navMenu {
-    display: flex;
-    justify-content: space-around;
+  .nav {
+    padding: 15px 30px;
+    display: inline-flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     width: 100%;
+    scale: 100%;
+    left: 20px;
   }
   
   /* media queries */
-  
-  @media screen and (max-width: 780px){
     
     /* hamburger */
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    scale: 110%;
+  }
   
-    .bar {
-          background-color: #120f0b;
-          width: 20px;
-          height: 3px;
-          display: block;
-          margin: 5px;
-          -webkit-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
-      }
+  .vertBar,.horBar{
+        display: block;
+        background-color: var(--highlight);
+        width: 20px;
+        height: 3px;
+        margin: 5px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+  }
+  
+  .vertBar{
+    width: 30px;
+    height: 2px;
+    transform: rotate(90deg);
+  }
+
+  .horBar{
+    display: block;
+  }
   
     /* adding active class to the bars  */
     .hamburger.active .bar:nth-child(2){
@@ -84,21 +103,19 @@
     .navMenu{
       position: fixed;
       flex-direction: column;
-      gap: 0;
-      top: 8.5%;
-      left: -100%;
-      text-align: start;
+      gap: 20px;
+      top: -100%;
       width: 100%;
-      transition: 0.7s ease-in-out;
+      left: 0%;
+      height: 100%;
+      transition: 0.4s ease-in-out;
       background-color: var(--shadow);
-      padding: 10px;
     }
   
     .navMenu.active{
-      left: 0;
+      top: 0;
     }
   
     .navMenu li {
       margin: 16px 0;
     }
-  }
