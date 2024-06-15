@@ -8,9 +8,6 @@ import { BrowserRouter } from 'react-router-dom'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <header className="navbar">
-          <Navbar/>
-      </header>
       <App/>
     </BrowserRouter>
   </React.StrictMode>,

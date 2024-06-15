@@ -22,6 +22,13 @@ function Home() {
         </p>
       </div>
     </div>
+    <span>
+      <Link to='/about'>
+        <button>
+          About
+        </button>
+      </Link>
+    </span>
     </>
   )
 }

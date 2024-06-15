@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import  styles from './Navbar.module.css';
+import { Link } from 'react-router-dom';
+import About from '../About';
 function Navbar() {
   // adding the states 
   const [isActive, setIsActive] = useState(false);
@@ -22,7 +24,9 @@ function Navbar() {
               <a href='/' className={`${styles.navLink}`}>Home</a>
             </li>
             <li onClick={removeActive}>
-              <a href='/about' className={`${styles.navLink}`}>About</a>
+              <Link to="/about">
+                <a className={`${styles.navLink}`}>About</a>
+              </Link>
             </li>
             <li onClick={removeActive}>
               <a href='/projects' className={`${styles.navLink}`}>Projects</a>
