@@ -18,9 +18,6 @@ function Navbar() {
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
           {/* logo */}
-          <a onClick={toggleActiveClass}>
-            <img className='logo' src="./icon_transparent.png" alt="" />
-          </a>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li onClick={removeActive}>
               <a href='/' className={`${styles.navLink}`}>Home</a>
@@ -41,11 +38,18 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`} onClick={toggleActiveClass}>
-            <span className={`${styles.bar}`}></span>
-            <span className={`${styles.bar}`}></span>
-            <span className={`${styles.bar}`}></span>
-          </div>
+          <ul className={`${styles.nav}`}>
+            <a>
+              <img className={`${styles.logo}`} src="./icon_transparent.png" alt="" />
+            </a>
+            <span className={`${styles.vertBar}`}>
+            </span>
+            <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`} onClick={toggleActiveClass}>
+              <span className={`${styles.horBar}`}></span>
+              <span className={`${styles.horBar}`}></span>
+              <span className={`${styles.horBar}`}></span>
+            </div>
+          </ul>
         </nav>
       </header>
     </div>
