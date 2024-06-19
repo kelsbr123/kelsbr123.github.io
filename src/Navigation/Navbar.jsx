@@ -60,16 +60,6 @@ function Navbar() {
                 <p className={`${styles.mainLinks}`}>About</p>
               </Link>
             </li>
-            <li onClick={removeActive}>
-              <Link to="/projects">
-                <p className={`${styles.mainLinks}`}>Projects</p>
-              </Link>
-            </li>
-            <li onClick={removeActive}>
-              <Link to='/contact'>
-                <p className={`${styles.mainLinks}`}>Contact</p>
-              </Link>
-            </li>
           </ul>
         </ul>
       </div>
