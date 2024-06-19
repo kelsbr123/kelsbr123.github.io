@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: 'Courier New', Courier, monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   line-height: 1.5;
-  font-weight: 500;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #000000;
-  --main: #935cc4;
+  --main: #d681ec;
   --shadow: #7cd8e0;
   --highlight: #fb4c84;
   --border: #071228;
@@ -52,18 +51,20 @@ html:after {
 
 
 
-p{
-  font-weight: 500;
+p, a, h1{
+  color: #1a1162;
+}
+
+p, a{
   text-decoration: inherit;
 }
 
-a {
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration: inherit;
+p{
+  font-size: 20px;
+  font-weight: 1000;
 }
 a:hover {
-  color: #935cc4;
+  color: var(--main);
 }
 
 body {

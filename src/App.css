@@ -38,19 +38,28 @@
   flex: 1;
 }
 
-.paragraph{
-  display: inline;
+.paragraph, .about{
+  display: inline-flex;
+  flex-direction: column;
   background-color: var(--main);
   filter: drop-shadow(2rem 2rem var(--shadow));
   scale: 90%;
   max-width: 100%;
-  width: auto;
+}
+.paragraph{
   border-radius: var(--rounded-trapezoid);
 }
 
+
+.about{
+  border-radius: var(--rounded-square);
+  font-size: 30px;
+  height: 100%;
+}
 .center{
   padding: 1rem;
   vertical-align: middle;
+  height: 100%;
 }
 
 

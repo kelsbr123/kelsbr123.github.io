@@ -8,8 +8,6 @@
   
   ul {
     list-style: none;
-    padding: 150px 100px;
-    vertical-align: middle;
     font-size: 30px;
   }
   
@@ -20,10 +18,8 @@
   /* navbar */
   .navbar {
     position: fixed;
-    z-index: 100;
+    z-index: 1001;
     top: 30px;
-    display: inline-flex;
-    align-items: center;
     min-height: 10px;
     width: 100%;
   }
@@ -53,7 +49,6 @@
     align-items: center;
     gap: 10px;
     width: 100%;
-    scale: 100%;
     left: 20px;
   }
   
@@ -87,35 +82,65 @@
   }
   
     /* adding active class to the bars  */
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .horBar:nth-child(2){
       opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active .horBar:nth-child(1){
       transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active .horBar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
     }
   
   
     /* navMenu */
-  
-    .navMenu{
+
+    .menuWrapper{
       position: fixed;
-      flex-direction: column;
-      gap: 20px;
+      z-index: 1000;
       top: -100%;
-      width: 100%;
-      left: 0%;
       height: 100%;
-      transition: 0.4s ease-in-out;
       background-color: var(--shadow);
+      width: 100%;
+      transition: 0.4s ease-in-out;
+      justify-content: flex-start;
     }
-  
-    .navMenu.active{
+
+    .menuWrapper.active{
       top: 0;
     }
+
+    .menuInner{
+      padding-left: 100px;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: baseline;
+    }
+
+    .socialLinks{
+      display: inline-flex;
+      flex-direction: row;
+      padding-bottom: 5px;
+      padding-top: 10px;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .socialLinks_link{
+      display: flex;
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+
+    .mainLinks{
+      gap: 20px;
+      font-weight: bold;
+      font-size: 40px;
+    }
   
-    .navMenu li {
+    .mainLinks li {
       margin: 16px 0;
     }

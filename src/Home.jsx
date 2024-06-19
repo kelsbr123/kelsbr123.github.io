@@ -11,7 +11,7 @@ function Home() {
     <>
     <div className="splitscreen">
       <div className="left container img center">
-        <img src="/headshot.jpg" alt="" />
+        <img src="/headshot.jpg" alt="Headshot of Kels Barrett-Rivkin standing in front of mountain background" />
       </div>
       <div className="right paragraph">
         <h1> A Little About Me</h1>
