@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -12,11 +11,12 @@
   transition: filter 300ms;
   scale: 300%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.column {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @keyframes logo-spin {

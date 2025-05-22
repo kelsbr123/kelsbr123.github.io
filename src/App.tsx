@@ -5,13 +5,13 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="column">
         <a target="_blank">
           <img src={constructionGif} className="logo" alt="Keystone Ski Resort Logo" />
         </a>
-      </div>
-      <h1>Sorry! This page is under construction right now.</h1>
-      <div className="card">
+        <h1>OUR GOAL</h1>
+        <p>Our goal is to reduce the amount of tax that property owners in keystone pay by dissolving the Keystone Neighbourhood Company, also known as KNC. KNC extracts fees from Keystone owners while
+          providing little in return. </p>
       </div>
     </>
   )
