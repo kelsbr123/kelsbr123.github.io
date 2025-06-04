@@ -35,42 +35,42 @@ function App() {
         </div>
         <div className='row'>
           <h2>Declaration appears to grant 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)</h2>
-          <object data={declaration + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf'  data={declaration + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Resort parcel shows beaver pond on county records being owned by vail summit resorts inc.</h2>
-          <object data={scan + "?#zoom=27"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf'  data={scan + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>County's GIS shows resort parcel - is likely almost wholly un-developable</h2>
-          <object data={lot_four + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf'  data={lot_four + "?#view=FitH" } type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>County's GIS shows lot 4 with view of surrounding area</h2>
-          <object data={lot_four_two + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf'  data={lot_four_two + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Homeowners own 66% of units but voting matrix shows reaching 67% threshold for change is impossible because of the beaver pond</h2>
-          <object data={voting_matrix + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf'  data={voting_matrix+ "?#view=FitH" } type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Yet state law prohibits allocation of Interests that Discriminate in favor of declarant (see (c2))</h2>
-          <object data={common_interest + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf' data={common_interest + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Real estate revenues are app. 73% of total revenues and paid mostly by homeowners.
             Events and Warren station bring in app. $0.8 million but lose app. $1.9 million (according to 2023 reports)</h2>
-          <object data={financials + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf' data={financials + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Two taxing entities provide the same services</h2>
-          <object data={duplicate_services + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf' data={duplicate_services + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Who to contact with your complaints</h2>
-          <object data={contact + "?#zoom=85"} type="application/pdf" width="1000" height="800"></object>
+          <object className='pdf' data={contact + "?#view=FitH"} type="application/pdf"></object>
         </div>
-        <div>
+        <div className='list'>
           <h1>Letters to town of keystone to date - please use whatever resonates for you in your letters</h1>
           <ul>
             <li className='link'> <a href={mathews_letter} target='top'>KNC makes clear that town of Keystone goals include economic development</a> </li>
@@ -83,14 +83,14 @@ function App() {
             <li className='link'> <a href={non_paying} target='top'>Keystone Gives More Love to non-paying Vail Resorts than to Homeowners</a> </li>
           </ul>
         </div>
-        <div className='horizontal'>
+        <div className='iframes'>
           <div className="column">
             <h2>Register for the zoom call here</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLFkwIk79Jey_LGbIv2FzoKpImc1z8cQXOm-yrJ6JD-529Uw/viewform?embedded=true" width="500" height="856">Loading…</iframe>
+            <iframe className='iframe' src="https://docs.google.com/forms/d/e/1FAIpQLSdLFkwIk79Jey_LGbIv2FzoKpImc1z8cQXOm-yrJ6JD-529Uw/viewform?embedded=true">Loading…</iframe>
           </div>
           <div className='column'>
             <h2>Donate to the fundraiser <a href='https://gofund.me/bb1af1e1' target='top'>here</a></h2>
-            <iframe src="https://gofund.me/bb1af1e1" width="500" height="850">...Loading</iframe>
+            <iframe className='iframe' src="https://gofund.me/bb1af1e1">...Loading</iframe>
           </div>
         </div>
       </div>

@@ -1,20 +1,24 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2vw;
+  display: flex;
+  max-width: 1280px;
+  width: 92vw;
 }
 
 .column {
-  max-width: 98%;
-  display: flex;
+  width: inherit;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+
 .row {
-  margin: 1rem;
-  margin-bottom: .25rem;
+  flex: 1;
+  margin: 1vw;
+  margin-bottom: .25vw;
 }
 
 .link{
@@ -23,19 +27,43 @@
   font-family: Vollkorn;
 }
 
-.horizontal{
-  margin: 1rem;
-  margin-bottom: .25rem;
+.iframes{
+  align-self: center;
+  max-width: 100vw;
   flex-direction: row;
   display: inline-flex;
 }
 
+.iframe{
+  width: 45vw;
+  max-width: 600px;
+  max-height: 856px;
+  height: 80vw;
+}
+
+.pdf{
+  max-width: 1000px;
+  width: 92vw;
+  height: 100vh;
+  max-height: 850px;
+}
 
 .card {
   padding: 2em;
 }
 
 ul{
+  align-self: inherit;
   list-style-type: none;
+  width: inherit;
+}
+
+@media (width <= 700px){
+  .iframes{
+    flex-direction: column;
+  }
+  .iframe{
+    width: 25rem;
+  }
 }
 
