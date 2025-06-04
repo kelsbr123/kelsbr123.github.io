@@ -1,0 +1,23 @@
+{
+    "name": "assets",
+    "type": "module",
+    "keywords": ["assets"],
+    "exports": {
+        "lot_four": "./assets/Lot 4 Keystone Base 1.pdf",
+        "lot_four_two": "./assets/Lot 4 Keystone with Lot 4 Keystone Base 1 Shown.pdf",
+        "declaration": "./assets/Declaration's Allocation of 1,000 Votes to Resort Parcel Owner.pdf",
+        "scan": "./assets/Filename-482907.pdf",
+        "voting_matrix": "./assets/Voting Matrix Update as of 10.15.2024.pdf",
+        "financials": "./assets/2023-KNC-Audited-Financials-pages 5 to 6.pdf",
+        "common_interest": "./assets/2024 Colorado Common Interest Ownership Act 38-33.3-000-35 - Allocation of Interests Not to Discriminate in Favor of Declarant.pdf",
+        "double_taxation_letter": "./assets/Keystone Accomodats KNC's Double Taxation of KNC Homeowners.pdf",
+        "empty_housing_letter": "./assets/Keystone Taxes Homeowners for Emp Housing but Doesn't Push Vail Resorts.pdf",
+        "mathews_letter": "./assets/Mathews Makes Clear that Town is Leading Economic Development.pdf",
+        "knc_economic_goals": "./assets/Mayor and KNC Confer on Economic Goals without Including Any of Us (the actual providers of revenue!).pdf",
+        "mayor_design_review_board": "./assets/Mayor Riley Solicits Vail Resorts for Design Review Board over other Applicants.pdf",
+        "warren_station": "./assets/Rather than Have Open Hearing Riley Meets with Vail Resorts to Discuss Warren Station.pdf",
+        "mayor_solicits_knc": "./assets/Riley Solicits KNC for Design Review Board.pdf",
+        "duplicate_services": "./assets/Two Taxing Entities - Same Set of Services.pdf",
+        "contact": "./assets/Who to Contact with Your KNC and Keystone Complaints .pdf"
+    }
+}
