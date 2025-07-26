@@ -37,8 +37,8 @@
 .iframe{
   width: 45vw;
   max-width: 600px;
-  max-height: 856px;
-  height: 80vw;
+  max-height: 650px;
+  height: 110vh;
 }
 
 .pdf{

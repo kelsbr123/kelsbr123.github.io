@@ -69,6 +69,13 @@ p{
   font-size: 1.5em;
 }
 
+hr{
+  border: 0;
+  border-top: 3px solid rgb(160, 200, 120);
+  margin: 1em;
+  margin-top: 3em;
+}
+
 
 button {
   border-radius: 8px;

@@ -16,6 +16,8 @@ import mayor_solicits_knc from "./assets/Riley Solicits KNC for Design Review Bo
 import duplicate_services from "./assets/Two Taxing Entities - Same Set of Services.pdf"
 import contact from "./assets/Who to Contact with Your KNC and Keystone Complaints .pdf"
 import non_paying from "./assets/Keystone Gives More Love to non-paying Vail Resorts than to Homeowners.pdf"
+import new_points from "./assets/New Points for Website - July 25 2025.pdf"
+
 
 function App() {
 
@@ -34,24 +36,32 @@ function App() {
           <p>(Made by Maureen Barrett, Red Hawk Lodge, Keystone, barrettbuffalopark@gmail.com)</p>
         </div>
         <div className='row'>
+          <h1>Read the facts here and add your name to our email list at the bottom of the page</h1>
+          <hr></hr>
+        </div>
+        <div className='row'>
+          <h2>WHY KNC NEEDS TO GO</h2>
+          <object className='pdf' data={new_points + "?#view=FitH"} type="application/pdf"></object>
+        </div>
+        <div className='row'>
           <h2>Declaration appears to grant 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)</h2>
-          <object className='pdf'  data={declaration + "?#view=FitH"} type="application/pdf"></object>
+          <object className='pdf' data={declaration + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Resort parcel shows beaver pond on county records being owned by vail summit resorts inc.</h2>
-          <object className='pdf'  data={scan + "?#view=FitH"} type="application/pdf"></object>
+          <object className='pdf' data={scan + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>County's GIS shows resort parcel - is likely almost wholly un-developable</h2>
-          <object className='pdf'  data={lot_four + "?#view=FitH" } type="application/pdf"></object>
+          <object className='pdf' data={lot_four + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>County's GIS shows lot 4 with view of surrounding area</h2>
-          <object className='pdf'  data={lot_four_two + "?#view=FitH"} type="application/pdf"></object>
+          <object className='pdf' data={lot_four_two + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Homeowners own 66% of units but voting matrix shows reaching 67% threshold for change is impossible because of the beaver pond</h2>
-          <object className='pdf'  data={voting_matrix+ "?#view=FitH" } type="application/pdf"></object>
+          <object className='pdf' data={voting_matrix + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
           <h2>Yet state law prohibits allocation of Interests that Discriminate in favor of declarant (see (c2))</h2>
@@ -70,6 +80,7 @@ function App() {
           <h2>Who to contact with your complaints</h2>
           <object className='pdf' data={contact + "?#view=FitH"} type="application/pdf"></object>
         </div>
+        <hr></hr>
         <div className='list'>
           <h1>Letters to town of keystone to date - please use whatever resonates for you in your letters</h1>
           <ul>
@@ -83,6 +94,7 @@ function App() {
             <li className='link'> <a href={non_paying} target='top'>Keystone Gives More Love to non-paying Vail Resorts than to Homeowners</a> </li>
           </ul>
         </div>
+        <hr></hr>
         <div className='iframes'>
           <div className="column">
             <h2>Register for the zoom call here</h2>
