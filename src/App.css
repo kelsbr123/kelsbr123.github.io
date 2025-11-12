@@ -48,6 +48,43 @@
   max-height: 850px;
 }
 
+
+table{
+  border: 3px solid  rgb(160, 200, 120);
+  align-self: inherit;
+  align-items: center;
+  display: inline-block;
+}
+
+caption{
+  align-self: inherit;
+}
+
+th, td{
+  border: 2px solid rgb(160, 200, 120);
+  width: 65vw;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: .7em;
+  padding-left: .7em;
+}
+
+th{
+  font-size: 1.3em;
+  padding: 1em;
+  padding-right: .7em;
+}
+
+table, th, td{
+  border-collapse: collapse;
+}
+
+td{
+  font-family: Vollkhorn;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 .card {
   padding: 2em;
 }

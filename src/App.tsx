@@ -24,6 +24,47 @@ function App() {
   return (
     <>
       <div className="column">
+        <div className='iframes'>
+          <div className="column">
+            <h2>Sign up for our mailing list here</h2>
+            <iframe className='iframe' src="https://docs.google.com/forms/d/e/1FAIpQLSdLFkwIk79Jey_LGbIv2FzoKpImc1z8cQXOm-yrJ6JD-529Uw/viewform?embedded=true">Loading…</iframe>
+          </div>
+          <div className='column'>
+            <h2>Donate to the fundraiser <a href='https://gofund.me/bb1af1e1' target='top'>here</a></h2>
+            <iframe className='iframe' src="https://gofund.me/bb1af1e1">...Loading</iframe>
+          </div>
+        </div>
+        <hr></hr>
+        <div className='row'>
+          <table>
+            <thead>
+              <tr>
+                <th scope='col'>Reasons for Joining our Reform Effort</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>You would like to have your vote matter when it comes to how your annual assessments are spent.</td>
+              </tr>
+              <tr>
+                <td>You question why 2% of your sales equity goes to an organization that blocks you from voting your interests.</td>
+              </tr>
+              <tr>
+                <td>You wonder why your Annual Assessment is used to pay for a snowmelt system on the Kindred’s private property.
+                </td>
+              </tr>
+              <tr>
+                <td>Your neighborhood doesn’t even get flower boxes in the summertime, despite you and your neighbors each paying on the order of $4,000 to $5,000 each and every year to KNC for that purpose.</td>
+              </tr>
+              <tr>
+                <td>Your neighborhood barely gets its road plowed in the wintertime, despite you and your neighbors each paying on the order of $4,000 to $5,000 each and every year to KNC for that purpose.</td>
+              </tr>
+              <tr>
+                <td>You wonder why your Annual and Sales Assessments should be used to pay for festivals that lose ½ million dollars, year after year, when you receive nothing in benefits.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div className='row'>
           <h1>DISCLAIMER</h1>
           <p>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
@@ -36,7 +77,7 @@ function App() {
           <p>(Made by Maureen Barrett, Red Hawk Lodge, Keystone, barrettbuffalopark@gmail.com)</p>
         </div>
         <div className='row'>
-          <h1>Read the facts here and add your name to our email list at the bottom of the page</h1>
+          <h1>Add your name to our email list above and read the facts below</h1>
           <hr></hr>
         </div>
         <div className='row'>
@@ -95,16 +136,6 @@ function App() {
           </ul>
         </div>
         <hr></hr>
-        <div className='iframes'>
-          <div className="column">
-            <h2>Register for the zoom call here</h2>
-            <iframe className='iframe' src="https://docs.google.com/forms/d/e/1FAIpQLSdLFkwIk79Jey_LGbIv2FzoKpImc1z8cQXOm-yrJ6JD-529Uw/viewform?embedded=true">Loading…</iframe>
-          </div>
-          <div className='column'>
-            <h2>Donate to the fundraiser <a href='https://gofund.me/bb1af1e1' target='top'>here</a></h2>
-            <iframe className='iframe' src="https://gofund.me/bb1af1e1">...Loading</iframe>
-          </div>
-        </div>
       </div>
     </>
   )
