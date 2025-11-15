@@ -6,16 +6,6 @@ import scan from "./assets/Filename-482907.pdf"
 import voting_matrix from "./assets/Voting Matrix Update as of 10.15.2024.pdf"
 import financials from "./assets/2023-KNC-Audited-Financials-pages 5 to 6.pdf"
 import common_interest from "./assets/2024 Colorado Common Interest Ownership Act 38-33.3-000-35 - Allocation of Interests Not to Discriminate in Favor of Declarant.pdf"
-import double_taxation_letter from "./assets/Keystone Accomodats KNC's Double Taxation of KNC Homeowners.pdf"
-import empty_housing_letter from "./assets/Keystone Taxes Homeowners for Emp Housing but Doesn't Push Vail Resorts.pdf"
-import mathews_letter from "./assets/Mathews Makes Clear that Town is Leading Economic Development.pdf"
-import knc_economic_goals from "./assets/Mayor and KNC Confer on Economic Goals without Including Any of Us (the actual providers of revenue!).pdf"
-import mayor_design_review_board from "./assets/Mayor Riley Solicits Vail Resorts for Design Review Board over other Applicants.pdf"
-import warren_station from "./assets/Rather than Have Open Hearing Riley Meets with Vail Resorts to Discuss Warren Station.pdf"
-import mayor_solicits_knc from "./assets/Riley Solicits KNC for Design Review Board.pdf"
-import duplicate_services from "./assets/Two Taxing Entities - Same Set of Services.pdf"
-import contact from "./assets/Who to Contact with Your KNC and Keystone Complaints .pdf"
-import non_paying from "./assets/Keystone Gives More Love to non-paying Vail Resorts than to Homeowners.pdf"
 import new_points from "./assets/New Points for Website - July 25 2025.pdf"
 
 
@@ -65,6 +55,7 @@ function App() {
             </tbody>
           </table>
         </div>
+        <hr></hr>
         <div className='row'>
           <h1>DISCLAIMER</h1>
           <p>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
@@ -109,31 +100,9 @@ function App() {
           <object className='pdf' data={common_interest + "?#view=FitH"} type="application/pdf"></object>
         </div>
         <div className='row'>
-          <h2>Real estate revenues are app. 73% of total revenues and paid mostly by homeowners.
+          <h2>Real estate revenues are app. 90% of total revenues and paid mostly by homeowners.
             Events and Warren station bring in app. $0.8 million but lose app. $1.9 million (according to 2023 reports)</h2>
           <object className='pdf' data={financials + "?#view=FitH"} type="application/pdf"></object>
-        </div>
-        <div className='row'>
-          <h2>Two taxing entities provide the same services</h2>
-          <object className='pdf' data={duplicate_services + "?#view=FitH"} type="application/pdf"></object>
-        </div>
-        <div className='row'>
-          <h2>Who to contact with your complaints</h2>
-          <object className='pdf' data={contact + "?#view=FitH"} type="application/pdf"></object>
-        </div>
-        <hr></hr>
-        <div className='list'>
-          <h1>Letters to town of keystone to date - please use whatever resonates for you in your letters</h1>
-          <ul>
-            <li className='link'> <a href={mathews_letter} target='top'>KNC makes clear that town of Keystone goals include economic development</a> </li>
-            <li className='link'> <a href={knc_economic_goals} target='top'>Mayor Riley and KNC meet on economic goals without public input</a> </li>
-            <li className='link'> <a href={mayor_design_review_board} target='top'>Objections to Mayor Riley's solicitation of KNC for Design Review Board</a> </li>
-            <li className='link'> <a href={warren_station} target='top'>Mayor Riley discusses Warren Station with primarily Vail Resorts personnel</a> </li>
-            <li className='link'> <a href={mayor_solicits_knc} target='top'>Mayor Riley solicits KNC for Design Review Board</a> </li>
-            <li className='link'> <a href={double_taxation_letter} target='top'>Keystone accommodates double taxation</a> </li>
-            <li className='link'> <a href={empty_housing_letter} target='top'>Vail resorts fails to provide adequate employee housing while Keystone taxes homeowners</a> </li>
-            <li className='link'> <a href={non_paying} target='top'>Keystone Gives More Love to non-paying Vail Resorts than to Homeowners</a> </li>
-          </ul>
         </div>
         <hr></hr>
       </div>
