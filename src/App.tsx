@@ -17,8 +17,6 @@ function App() {
   return (
     <>
       <div className="column">
-        {forms()}
-        <hr></hr>
         {table()}
         <hr></hr>
         {disclaimer()}
@@ -26,20 +24,21 @@ function App() {
           <p>(Made by Maureen Barrett, Red Hawk Lodge, Keystone, barrettbuffalopark@gmail.com)</p>
         </div>
         <div className='row'>
-          <h1>Add your name to our email list above and read the facts below</h1>
+          <h1>Add your name to our email list below and read the facts below</h1>
         </div>
         <hr></hr>
         {build_pdf_row(new_points, "WHY KNC NEEDS TO GO")}
-        {build_pdf_row(declaration, "Declaration appears to grant 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)")}
-        {build_pdf_row(scan, "Resort parcel shows beaver pond on county records being owned by vail summit resorts inc.")}
-        {build_pdf_row(lot_four, "County's GIS shows resort parcel - is likely almost wholly un-developable")}
-        {build_pdf_row(lot_four_two, "County's GIS shows lot 4 with view of surrounding area")}
-        {build_pdf_row(voting_matrix_unfair, "Homeowners own 66% of units but voting matrix shows reaching 67% threshold for change is impossible because of the beaver pond")}
+        {build_pdf_row(voting_matrix_unfair, "Homeowners own more than 75% of units but voting matrix shows reaching 67% threshold for change is impossible because of the beaver pond")}
         {build_pdf_row(voting_matrix_fair, "This is what a fair vote allocation would look like")}
         {build_pdf_row(current_board, "And here is the current board versus one that is actually fair")}
+        {build_pdf_row(declaration, "Declaration grants 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)")}
+        {build_pdf_row(scan, "Resort parcel shows beaver pond on county records being owned by vail summit resorts inc.")}
+        {build_pdf_row(lot_four, "County's records shows resort parcel - is wholly un-developable")}
+        {build_pdf_row(lot_four_two, "County's GIS shows the \"resort parcel\" with view of surrounding area and that it is not connected to ski resort")}
         {build_pdf_row(common_interest, "Yet state law prohibits allocation of Interests that Discriminate in favor of declarant (see (c2))")}
-        {build_pdf_row(financials, "Real estate revenues are app. 90% of total revenues and paid mostly by homeowners. Events and Warren station bring in app. $0.8 million but lose app. $1.9 million (according to 2023 reports)")}
+        {build_pdf_row(financials, "Home owner revenues are  80-90% of total revenues and paid mostly by homeowners. Events and Warren station bring in app. $0.8 million but lose app. $1.9 million (according to 2023 reports)")}
         <hr></hr>
+        {forms()}
       </div>
     </>
   )
@@ -98,12 +97,13 @@ function table() {
 function disclaimer() {
   return (
     <div className='row'>
-      <h1>DISCLAIMER</h1>
-      <p>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
+      <h3>DISCLAIMER</h3>
+      <p style={{"marginTop": "2px", "fontSize": "1.2em"}}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
         The creators of this content have made every effort to be accurate and truthful in its presentation.</p>
       <h1>Goal</h1>
-      <p>Our goal is to reduce the amount of tax that property owners in Keystone pay by dissolving or changing the Keystone Neighborhood Company, also known as KNC. KNC extracts fees from KNC owners while
-        providing far too little in return. Now with the incorporation of Keystone, KNC is not necessary.</p>
+      <p>Our goal is to reform the HOA that is the KNC to make voting interests proportional to actual ownership and revenues. If we achieve our goal KNC homeowners will have 75% or more of all the votes,
+        and will have six or seven seats on the KNC Board, and we can change how the KNC works.
+      </p>
     </div>
   )
 }
