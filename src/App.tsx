@@ -17,8 +17,6 @@ function App() {
   return (
     <>
       <div className="column">
-        {table()}
-        <hr></hr>
         {disclaimer()}
         <div className='row'>
           <p>(Made by Maureen Barrett, Red Hawk Lodge, Keystone, barrettbuffalopark@gmail.com)</p>
@@ -30,6 +28,7 @@ function App() {
         {build_pdf_row(new_points, "WHY KNC NEEDS TO GO")}
         {build_pdf_row(voting_matrix_unfair, "Homeowners own more than 75% of units but voting matrix shows reaching 67% threshold for change is impossible because of the beaver pond")}
         {build_pdf_row(voting_matrix_fair, "This is what a fair vote allocation would look like")}
+        {table()}
         {build_pdf_row(current_board, "And here is the current board versus one that is actually fair")}
         {build_pdf_row(declaration, "Declaration grants 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)")}
         {build_pdf_row(scan, "Resort parcel shows beaver pond on county records being owned by vail summit resorts inc.")}
@@ -85,9 +84,6 @@ function table() {
           <tr>
             <td>Your neighborhood barely gets its road plowed in the wintertime, despite you and your neighbors each paying on the order of $4,000 to $5,000 each and every year to KNC for that purpose.</td>
           </tr>
-          <tr>
-            <td>You wonder why your Annual and Sales Assessments should be used to pay for festivals that lose ½ million dollars, year after year, when you receive nothing in benefits.</td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -98,7 +94,7 @@ function disclaimer() {
   return (
     <div className='row'>
       <h3>DISCLAIMER</h3>
-      <p style={{"marginTop": "2px", "fontSize": "1.2em"}}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
+      <p style={{"marginTop": "2px", "fontSize": "1 em"}}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
         The creators of this content have made every effort to be accurate and truthful in its presentation.</p>
       <h1>Goal</h1>
       <p>Our goal is to reform the HOA that is the KNC to make voting interests proportional to actual ownership and revenues. If we achieve our goal KNC homeowners will have 75% or more of all the votes,
