@@ -1,14 +1,14 @@
 import './App.css'
-import lot_four from "./assets/Lot 4 Keystone Base 1.pdf"
-import lot_four_two from "./assets/Lot 4 Keystone with Lot 4 Keystone Base 1 Shown.pdf"
-import declaration from "./assets/Declaration's Allocation of 1,000 Votes to Resort Parcel Owner.pdf"
-import scan from "./assets/Filename-482907.pdf"
-import financials from "./assets/2023-KNC-Audited-Financials-pages 5 to 6.pdf"
-import common_interest from "./assets/2024 Colorado Common Interest Ownership Act 38-33.3-000-35 - Allocation of Interests Not to Discriminate in Favor of Declarant.pdf"
-import new_points from "./assets/New Points for Website - July 25 2025.pdf"
-import current_board from "./assets/Current Board and As it Should Be .pdf"
-import voting_matrix_unfair from "./assets/Voting Matrix - By Voting Class.pdf"
-import voting_matrix_fair from "./assets/Voting Matrix - By Voting Class - The Fair One.pdf"
+import lot_four from "./assets/current_documents/Lot 4 Keystone Base 1.pdf"
+import lot_four_two from "./assets/current_documents/Lot 4 Keystone with Lot 4 Keystone Base 1 Shown.pdf"
+import declaration from "./assets/current_documents/Declaration's Allocation of 1,000 Votes to Resort Parcel Owner.pdf"
+import scan from "./assets/current_documents/Filename-482907.pdf"
+import financials from "./assets/current_documents/2023-KNC-Audited-Financials-pages 5 to 6.pdf"
+import common_interest from "./assets/current_documents/2024 Colorado Common Interest Ownership Act 38-33.3-000-35 - Allocation of Interests Not to Discriminate in Favor of Declarant.pdf"
+import new_points from "./assets/current_documents/New Points for Website - July 25 2025.pdf"
+import current_board from "./assets/current_documents/Current Board and As it Should Be.pdf"
+import voting_matrix_unfair from "./assets/current_documents/Voting Matrix - By Voting Class.pdf"
+import voting_matrix_fair from "./assets/current_documents/Voting Matrix - How it Should Be - The Fair One.pdf"
 
 
 
@@ -94,7 +94,7 @@ function disclaimer() {
   return (
     <div className='row'>
       <h3>DISCLAIMER</h3>
-      <p style={{"marginTop": "2px", "fontSize": "1 em"}}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
+      <p style={{"marginTop": "2px", "fontSize": "1em"}}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
         The creators of this content have made every effort to be accurate and truthful in its presentation.</p>
       <h1>Goal</h1>
       <p>Our goal is to reform the HOA that is the KNC to make voting interests proportional to actual ownership and revenues. If we achieve our goal KNC homeowners will have 75% or more of all the votes,
