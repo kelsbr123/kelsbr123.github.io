@@ -3,9 +3,9 @@ import lot_four from "./assets/current_documents/Lot 4 Keystone Base 1.pdf"
 import lot_four_two from "./assets/current_documents/Lot 4 Keystone with Lot 4 Keystone Base 1 Shown.pdf"
 import declaration from "./assets/current_documents/Declaration's Allocation of 1,000 Votes to Resort Parcel Owner.pdf"
 import scan from "./assets/current_documents/Filename-482907.pdf"
-import financials from "./assets/current_documents/2023-KNC-Audited-Financials-pages 5 to 6.pdf"
-import common_interest from "./assets/current_documents/2024 Colorado Common Interest Ownership Act 38-33.3-000-35 - Allocation of Interests Not to Discriminate in Favor of Declarant.pdf"
-import new_points from "./assets/current_documents/New Points for Website - July 25 2025.pdf"
+import financials from "./assets/current_documents/Audited Financials - Just Revenues Shown.pdf"
+import common_interest from "./assets/current_documents/Allocation of Votes to Declarant - Cannot Discriminate in Favor of Itself.pdf"
+import new_points from "./assets/current_documents/New Points for Website - June 1st 2026.pdf"
 import current_board from "./assets/current_documents/Current Board and As it Should Be.pdf"
 import voting_matrix_unfair from "./assets/current_documents/Voting Matrix - By Voting Class.pdf"
 import voting_matrix_fair from "./assets/current_documents/Voting Matrix - How it Should Be - The Fair One.pdf"
@@ -22,20 +22,20 @@ function App() {
           <p>(Made by Maureen Barrett, Red Hawk Lodge, Keystone and barrettbuffalopark@gmail.com)</p>
         </div>
         <div className='row'>
-          <h1>Add your name to our email list below and read the facts below</h1>
+          <h1>Donate at the link below and read the facts here</h1>
         </div>
         <hr></hr>
-        {build_pdf_row(new_points, "WHY KNC NEEDS TO GO")}
-        {build_pdf_row(voting_matrix_unfair, "Homeowners own about 75% of units but voting matrix shows reaching 67% threshold for change is impossible because of the beaver pond")}
+        {build_pdf_row(new_points, "WHY KNC NEEDS TO CHANGE")}
+        {build_pdf_row(voting_matrix_unfair, "Homeowners own about 75% of units but voting matrix shows reaching 67% \ threshold for change is impossible because of the beaver pond")}
         {build_pdf_row(voting_matrix_fair, "This is what a fair vote allocation would look like")}
         {table()}
         {build_pdf_row(current_board, "And here is the current board versus one that is actually fair")}
         {build_pdf_row(declaration, "Declaration grants 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)")}
-        {build_pdf_row(scan, "Resort parcel shows beaver pond on county records being owned by vail summit resorts inc.")}
-        {build_pdf_row(lot_four, "County's records shows resort parcel - is wholly un-developable")}
-        {build_pdf_row(lot_four_two, "County's GIS shows the \"resort parcel\" with view of surrounding area and that it is not connected to ski resort")}
+        {build_pdf_row(scan, "Resort parcel shows beaver pond on county records")}
+        {build_pdf_row(lot_four, "County's records call resort parcel \"Open Space\" and valued it at $40k in 2025")}
+        {build_pdf_row(lot_four_two, "County's GIS shows the \"resort parcel\" is not connected to ski resort")}
         {build_pdf_row(common_interest, "Yet state law prohibits allocation of Interests that Discriminate in favor of declarant (see (c2))")}
-        {build_pdf_row(financials, "Home owner revenues are  80-90% of total revenues and paid mostly by homeowners. Events and Warren station bring in app. $0.8 million but lose app. $1.9 million (according to 2023 reports)")}
+        {build_pdf_row(financials, "Home owners provide app. 90% of total revenues and paid mostly by homeowners. Events and Warren station bring in app. $900,000 but lose app. $2 million (events cost $1.3 million but likely require 1/2 of the salaries from $1.7 million total compensation)")}
         <hr></hr>
         {forms()}
       </div>
