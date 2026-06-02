@@ -3,7 +3,7 @@ import lot_four from "./assets/current_documents/Lot 4 Keystone Base 1.pdf"
 import lot_four_two from "./assets/current_documents/Lot 4 Keystone with Lot 4 Keystone Base 1 Shown.pdf"
 import declaration from "./assets/current_documents/Declaration's Allocation of 1,000 Votes to Resort Parcel Owner.pdf"
 import scan from "./assets/current_documents/Filename-482907.pdf"
-import financials from "./assets/current_documents/Audited Financials - Just Revenues Shown.pdf"
+import financials from "./assets/current_documents/2024-KNC-Audited-Financial-Statement - Event Revenues & Expenses Highlighted.pdf"
 import common_interest from "./assets/current_documents/Allocation of Votes to Declarant - Cannot Discriminate in Favor of Itself.pdf"
 import new_points from "./assets/current_documents/New Points for Website - June 1st 2026.pdf"
 import current_board from "./assets/current_documents/Current Board and As it Should Be.pdf"
@@ -34,8 +34,8 @@ function App() {
         {build_pdf_row(scan, "Resort parcel shows beaver pond on county records")}
         {build_pdf_row(lot_four, "County's records call resort parcel \"Open Space\" and valued it at $40k in 2025")}
         {build_pdf_row(lot_four_two, "County's GIS shows the \"resort parcel\" is not connected to ski resort")}
-        {build_pdf_row(common_interest, "Yet state law prohibits allocation of Interests that Discriminate in favor of declarant (see (c2))")}
-        {build_pdf_row(financials, "Home owners provide app. 90% of total revenues and paid mostly by homeowners. Events and Warren station bring in app. $900,000 but lose app. $2 million (events cost $1.3 million but likely require 1/2 of the salaries from $1.7 million total compensation)")}
+        {build_pdf_row(common_interest, "Yet state law prohibits allocation of Interests that Discriminate in favor of declarant")}
+        {build_pdf_row(financials, "Home owners provide app. 90% of total revenues. Events and Warren station bring in app. $900,000 but lose app. $2 million (events cost $1.3 million but likely require 1/2 of the salaries from $1.7 million total compensation)")}
         <hr></hr>
         {forms()}
       </div>
@@ -79,10 +79,7 @@ function table() {
             </td>
           </tr>
           <tr>
-            <td>Your neighborhood doesn’t even get flower boxes in the summertime, despite you and your neighbors each paying on the order of $4,000 to $5,000 each and every year to KNC for that purpose.</td>
-          </tr>
-          <tr>
-            <td>Your neighborhood barely gets its road plowed in the wintertime, despite you and your neighbors each paying on the order of $4,000 to $5,000 each and every year to KNC for that purpose.</td>
+            <td>Your neighborhood doesn’t even get flower boxes in the summertime, despite you and your neighbors each paying on the order of $4,000 each and every year to KNC for that purpose.</td>
           </tr>
         </tbody>
       </table>
