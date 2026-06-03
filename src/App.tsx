@@ -29,7 +29,7 @@ function App() {
         {build_pdf_row(voting_matrix_unfair, "Homeowners own about 75% of units but voting matrix shows reaching 67% \ threshold for change is impossible because of the beaver pond")}
         {build_pdf_row(voting_matrix_fair, "This is what a fair vote allocation would look like")}
         {table()}
-        {build_pdf_row(current_board, "And here is the current board versus one that is actually fair")}
+        {build_pdf_row(current_board, "And here is the current board versus one that is actually fair", "V")}
         {build_pdf_row(declaration, "Declaration grants 1000 votes to vail resorts because they own a beaver pond with wetlands (toggle through relevant pages)")}
         {build_pdf_row(scan, "Resort parcel shows beaver pond on county records")}
         {build_pdf_row(lot_four, "County's records call resort parcel \"Open Space\" and valued it at $40k in 2025")}
@@ -101,11 +101,11 @@ function disclaimer() {
   )
 }
 
-function build_pdf_row(doc: string, header: string) {
+function build_pdf_row(doc: string, header: string, fit: string = "H") {
   return (
     <div className='row'>
       <h2>{header}</h2>
-      <object className='pdf' data={doc + "?#view=FitH" } type="application/pdf"></object>
+      <object className='pdf' data={doc + "?#view=Fit"+ fit } type="application/pdf"></object>
     </div>
   )
 }
