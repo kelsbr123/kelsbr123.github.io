@@ -24,7 +24,6 @@ function App() {
         <div className='row'>
           <h1>Donate at the link below and read the facts here</h1>
         </div>
-        <hr></hr>
         {build_pdf_row(new_points, "WHY KNC NEEDS TO CHANGE")}
         {build_pdf_row(voting_matrix_unfair, "Homeowners own about 75% of units but voting matrix shows reaching 67% \ threshold for change is impossible because of the beaver pond")}
         {build_pdf_row(voting_matrix_fair, "This is what a fair vote allocation would look like")}
@@ -38,6 +37,11 @@ function App() {
         {build_pdf_row(financials, "Home owners provide app. 90% of total revenues. Events and Warren station bring in app. $900,000 but lose app. $2 million (events cost $1.3 million but likely require 1/2 of the salaries from $1.7 million total compensation)")}
         <hr></hr>
         {forms()}
+        <div className='iframes'>
+          <div className='column'> <h2>Watch Attorney Dorotik explain our case</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/iL7-64sEpFU?si=v2A-anf4yNXdrG-Z" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+          <div className='column'> <h2>See Founder Barrett thank donors for funding the launching of our case</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/BgkKWClI9W8?si=s3RCc5NvCDqzHkhm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+          <hr></hr>
+        </div>
       </div>
     </>
   )
@@ -91,7 +95,7 @@ function disclaimer() {
   return (
     <div className='row'>
       <h3>DISCLAIMER</h3>
-      <p style={{"marginTop": "2px", "fontSize": "1em"}}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
+      <p style={{ "marginTop": "2px", "fontSize": "1em" }}>The creators of this content do not endorse any violation of KNC regulations or state or federal law.
         The creators of this content have made every effort to be accurate and truthful in its presentation.</p>
       <h1>Goal</h1>
       <p>Our goal is to reform the HOA that is the KNC to make voting interests proportional to actual ownership and revenues. If we achieve our goal KNC homeowners will have about 75% or more of all the votes,
@@ -105,7 +109,7 @@ function build_pdf_row(doc: string, header: string, fit: string = "H") {
   return (
     <div className='row'>
       <h2>{header}</h2>
-      <object className='pdf' data={doc + "?#view=Fit"+ fit } type="application/pdf"></object>
+      <object className='pdf' data={doc + "?#view=Fit" + fit} type="application/pdf"></object>
     </div>
   )
 }
